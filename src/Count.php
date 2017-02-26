@@ -28,6 +28,11 @@
             }
             return $word_count;
         }
+
+        function remove_special_chars()
+        {
+            
+        }
     }
 
 
