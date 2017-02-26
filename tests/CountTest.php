@@ -36,7 +36,16 @@
         }
 
         function test_remove_word_spaces() {
-            
+            $input_sentence = 'the qui<ck brown brown fox';
+            $input_word = 'brown_ ';
+            $test_count = new Count($input_sentence, $input_word);
+
+            $test_count->remove_special_chars();
+            $test_count->remove_word_spaces();
+            $test_count->parse_sentence();
+            $result = $test_count->count_words();
+
+            $this->assertEquals(2, $result);
         }
     }
 
