@@ -40,6 +40,7 @@
         {
             $this->word = str_replace(' ', '', $this->word);
         }
+
     }
 
 
