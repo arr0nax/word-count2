@@ -5,9 +5,9 @@
     {
         function test_parse_function() {
             $input = 'the quick brown brown fox';
-            $test_count = new Count;
+            $test_count = new Count($input);
 
-            $result = $test_count->parse_sentence($input);
+            $result = $test_count->parse_sentence();
 
             $this->assertEquals(['0'=>'the','1'=>'quick','2'=>'brown','3'=>'brown','4'=>'fox'], $result);
         }

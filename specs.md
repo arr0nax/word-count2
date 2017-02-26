@@ -2,7 +2,7 @@
 #1. Program should accept sentences and parse them in to individual words
     *input: The quick brown brown fox*
     *output: "[the,quick,brown,brown,fox"]*
-#2. Program should then count the frequency of a selected word
+#2. Program should identify and count the frequency of a selected word
     *input: 'The quick brown brown fox', 'brown'*
     *output: 2*
 #3. Program should ignore spaces and special characters
