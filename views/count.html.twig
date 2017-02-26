@@ -5,6 +5,16 @@
         <title></title>
     </head>
     <body>
-        <h2>Your word appeared {{result}} times.</h2>
+        <p>Your word appeared {{new_count.count}} times.</p>
+        <p>
+            {%for word in new_count.sentence_array%}
+                {% if word == new_count.word%}
+                    <b> {{word}}</b>
+                    {%else%}
+                        {{word}}
+                {%endif%}
+            {%endfor%}
+        </p>
+        <a href="/">Try Again</a>
     </body>
 </html>

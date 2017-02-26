@@ -15,8 +15,7 @@
         $word = $_POST['word'];
         $sentence = $_POST['sentence'];
         $new_count = new Count($sentence, $word);
-        $result = $new_count->count();
-        return $app["twig"]->render("count.html.twig", ['result'=>$result]);
+        return $app["twig"]->render("count.html.twig", ['new_count'=>$new_count]);
 
     });
 
