@@ -73,7 +73,7 @@
             $test_count->parse_sentence();
             $result = $test_count->count_words();
 
-            $this->assertEquals(0, $result);
+            $this->assertEquals(2, $result);
         }
     }
 

@@ -41,6 +41,12 @@
             $this->word = str_replace(' ', '', $this->word);
         }
 
+        function all_to_lowercase()
+        {
+            $this->word = strtolower($this->word);
+            $this->sentence = strtolower($this->sentence);
+        }
+
     }
 
 
