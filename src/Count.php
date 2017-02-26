@@ -35,6 +35,11 @@
             $this->sentence = str_replace($special_characters, '', $this->sentence);
             $this->word = str_replace($special_characters, '', $this->word);
         }
+
+        function remove_word_spaces()
+        {
+            $this->word = str_replace(' ', '', $this->word);
+        }
     }
 
 
