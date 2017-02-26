@@ -4,9 +4,10 @@
         public $sentence_array;
         public $word;
 
-        function __construct($sentence)
+        function __construct($sentence, $word = null)
         {
             $this->sentence = $sentence;
+            $this->word = $word;
         }
 
         function parse_sentence()
