@@ -60,6 +60,21 @@
 
             $this->assertEquals(0, $result);
         }
+
+        function test_ignore_capitalization()
+        {
+            $input_sentence = 'the qui<ck Brown browN fox';
+            $input_word = 'brOwn';
+            $test_count = new Count($input_sentence, $input_word);
+
+            $test_count->remove_special_chars();
+            $test_count->remove_word_spaces();
+            $test_count->all_to_lowercase();
+            $test_count->parse_sentence();
+            $result = $test_count->count_words();
+
+            $this->assertEquals(0, $result);
+        }
     }
 
 

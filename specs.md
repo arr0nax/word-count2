@@ -8,7 +8,7 @@
 #3. Program should special characters
     *input: 'The quick quick b'rown fox', 'brown_'*
     *output: 1*
-#3. Program should special characters
+#3. Program should remove special characters
     *input: 'The quick quick brown fox', 'brown '*
     *output: 1*
 #4. Program should ignore capitalization
