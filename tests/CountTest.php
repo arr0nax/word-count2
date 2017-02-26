@@ -24,8 +24,8 @@
         }
 
         function test_ignore_special_characters() {
-            $input_sentence = 'the qui"ck brown brown fox';
-            $input_word = 'brown_ ';
+            $input_sentence = 'the qui<ck brown brown fox';
+            $input_word = 'brown_';
             $test_count = new Count($input_sentence, $input_word);
 
             $test_count->remove_special_chars();
@@ -33,6 +33,10 @@
             $result = $test_count->count_words();
 
             $this->assertEquals(2, $result);
+        }
+
+        function test_remove_word_spaces() {
+            
         }
     }
 

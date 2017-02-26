@@ -31,7 +31,9 @@
 
         function remove_special_chars()
         {
-            
+            $special_characters = ['~','!','@','#','$','%','^','&','*','(',')','_','+','-','=','{','}','|','[',']',':',';','"',"'",'<','>','?',',','.','/','`'];
+            $this->sentence = str_replace($special_characters, '', $this->sentence);
+            $this->word = str_replace($special_characters, '', $this->word);
         }
     }
 

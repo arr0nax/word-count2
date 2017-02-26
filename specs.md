@@ -5,8 +5,11 @@
 #2. Program should identify and count the frequency of a selected word
     *input: 'The quick brown brown fox', 'brown'*
     *output: 2*
-#3. Program should ignore spaces and special characters
+#3. Program should special characters
     *input: 'The quick quick b'rown fox', 'brown_'*
+    *output: 1*
+#3. Program should special characters
+    *input: 'The quick quick brown fox', 'brown '*
     *output: 1*
 #4. Program should ignore capitalization
     *input: 'The quick Brown brOwn Fox', 'broWn'*
