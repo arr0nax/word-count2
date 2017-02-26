@@ -47,6 +47,15 @@
             $this->sentence = strtolower($this->sentence);
         }
 
+        function count()
+        {
+            $this->remove_special_chars();
+            $this->remove_word_spaces();
+            $this->all_to_lowercase();
+            $this->parse_sentence();
+            return $this->count_words();
+        }
+
     }
 
 

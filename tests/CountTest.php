@@ -75,6 +75,17 @@
 
             $this->assertEquals(2, $result);
         }
+
+        function test_combine_functions()
+        {
+            $input_sentence = 'the qui<ck Br"own browN fox';
+            $input_word = '.brOwn ';
+            $test_count = new Count($input_sentence, $input_word);
+
+            $result = $test_count->count();
+
+            $this->assertEquals(2, $result);
+        }
     }
 
 
