@@ -17,7 +17,8 @@
             $input_word = 'brown';
             $test_count = new Count($input_sentence, $input_word);
 
-            $result = $test_count->CountRepeats();
+            $test_count->parse_sentence();
+            $result = $test_count->count_words();
 
             $this->assertEquals(2, $result);
         }
