@@ -11,5 +11,14 @@
         return $app["twig"]->render("root.html.twig");
     });
 
+    $app->post('/count', function() use($app) {
+        $word = $_POST['word'];
+        $sentence = $_POST['sentence'];
+        $new_count = new Count($sentence, $word);
+        $result = $new_count->count();
+        return $app["twig"]->render("count.html.twig", ['result'=>$result]);
+
+    });
+
     return $app;
 ?>
