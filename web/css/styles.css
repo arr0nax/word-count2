@@ -1,0 +1,34 @@
+.center, .form-container {
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    font-size: 130%;
+    text-align: center;
+    padding: 10px;
+}
+
+textarea {
+    height: 20vh;
+    width:30vw;
+}
+
+a {
+    display: block;
+    text-align: center;
+}
+
+p.footer1 {
+    margin-top: 50px;
+    padding: none;
+    margin: none;
+    font-size: 80%;
+    font-style: italic;
+}
+
+p.footer2 {
+    padding: none;
+    margin: none;
+    font-size: 80%;
+}

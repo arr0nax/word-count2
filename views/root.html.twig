@@ -3,15 +3,26 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="../css/styles.css">
     </head>
     <body>
-        <form class="" action="/count" method="post">
-            <label for="sentence">Enter a Sentence</label>
-            <input type="text" name="sentence" value="">
-            <label for="word">Enter a Word</label>
-            <input type="text" name="word" value="">
-            <button type="submit" name="button">Find Matches</button>
+        <h2 class="center">Word Counter</h2>
+        <form class="center" action="/count" method="post">
+            <div class="form-container">
+                <label for="word">Enter a Word</label>
+            </div>
+            <div class="form-container">
+                <input type="text" name="word" value=""></input>
+            </div>
+            <div class="form-container">
+                <label for="sentence">Enter a Sentence</label>
+            </div>
+            <div class="form-container">
+                <textarea type="text" name="sentence" value=""></textarea>
+            </div>
+            <div class="form-container">
+                <button type="submit" name="button">Find Matches</button>
+            </div>
         </form>
-
     </body>
 </html>

@@ -3,9 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title></title>
+        <link rel="stylesheet" href="../css/styles.css">
+
     </head>
     <body>
-        <p>Your word appeared {{new_count.count}} times.</p>
+        <p><b>{{new_count.word}}</b> appeared {{new_count.count}} times.</p>
         <p>
             {%for word in new_count.sentence_array%}
                 {% if word == new_count.word%}
@@ -16,5 +18,7 @@
             {%endfor%}
         </p>
         <a href="/">Try Again</a>
+        <p class="footer1">p.s. here is your original sentence:</p>
+        <p class="footer2">{{new_count.original_sentence}}</p>
     </body>
 </html>

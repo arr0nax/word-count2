@@ -3,11 +3,13 @@
         public $sentence;
         public $sentence_array;
         public $word;
+        public $original_sentence;
 
         function __construct($sentence, $word = null)
         {
             $this->sentence = $sentence;
             $this->word = $word;
+            $this->original_sentence = $sentence;
         }
 
         function parse_sentence()
