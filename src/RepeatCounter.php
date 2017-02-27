@@ -1,5 +1,5 @@
 <?php
-    class Count {
+    class RepeatCounter {
         public $sentence;
         public $sentence_array;
         public $word;
